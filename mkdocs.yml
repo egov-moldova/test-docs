@@ -1,8 +1,10 @@
-site_name: egov Documentation
+site_name: Documentation
 
 theme:
     name: material
     language: ro
+    logo: assets/logo.png
+    favicon: assets/favicon.ico
 plugins:
   - search
   - i18n:
