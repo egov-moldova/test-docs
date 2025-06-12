@@ -30,5 +30,5 @@ extra:
 
 nav:
   - Acasă: index.md
-  - Despre: about.md
-  - Contacte: contacts.md
+  - Despre: info/about.md
+  - Contacte: info/contacts.md
