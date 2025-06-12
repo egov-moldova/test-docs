@@ -29,6 +29,8 @@ extra:
       link: /en/
       lang: en
 
+extra_css:
+  - stylesheets/onest.css
 
 nav:
   - Acasă: index.md
