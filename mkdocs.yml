@@ -5,6 +5,23 @@ theme:
     language: ro
     logo: assets/logo.png
     favicon: assets/favicon.ico
+    icon:
+      alternate: material/translate-variant
+    palette:
+      - scheme: slate
+        toggle:
+          name: Dark mode
+          icon: material/shield-sun-outline
+        primary: light blue
+        accent: blue
+
+      - scheme: default
+        toggle:
+          name: Light mode
+          icon: material/shield-moon-outline
+        primary: light blue
+        accent: blue 
+
 plugins:
   - search
   - i18n:
