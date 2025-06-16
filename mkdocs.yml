@@ -14,13 +14,12 @@ theme:
           icon: material/shield-sun-outline
         primary: light blue
         accent: blue
-
       - scheme: default
         toggle:
           name: Light mode
           icon: material/shield-moon-outline
         primary: light blue
-        accent: blue 
+        accent: blue
 
 plugins:
   - search
@@ -45,6 +44,17 @@ extra:
     - name: English
       link: /en/
       lang: en
+  social:
+    - icon: fontawesome/brands/youtube 
+      link: https://www.youtube.com/user/eGovCenterMoldova
+    - icon: fontawesome/brands/facebook 
+      link: https://www.facebook.com/eGovernanceAgency.Moldova
+    - icon: fontawesome/brands/linkedin 
+      link: https://www.linkedin.com/company/e-government-center
+    - icon: fontawesome/brands/instagram 
+      link: https://www.instagram.com/e_guvernare_moldova/
+    - icon: fontawesome/brands/flickr
+      link: https://www.flickr.com/photos/201389958@N05/
 
 extra_css:
   - stylesheets/onest.css
@@ -53,3 +63,5 @@ nav:
   - Acasă: index.md
   - Despre: info/about.md
   - Contacte: info/contacts.md
+
+copyright: © Agenția de Guvernare Electronică. Toate drepturile rezervate. 
