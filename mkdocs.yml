@@ -12,14 +12,14 @@ theme:
         toggle:
           name: Dark mode
           icon: material/shield-sun-outline
-        primary: light blue
-        accent: blue
+        primary: blue
+        accent: indigo
       - scheme: default
         toggle:
           name: Light mode
           icon: material/shield-moon-outline
-        primary: light blue
-        accent: blue
+        primary: blue
+        accent: indigo
 
 plugins:
   - search
