@@ -1,5 +1,6 @@
 site_name: Documentation
 site_url: https://egov-moldova.github.io/test-docs/
+use_directory_urls: true
 
 
 theme:
@@ -53,10 +54,10 @@ plugins:
 extra:
   alternate:
     - name: Română
-      link: /
+      link: /test-docs/
       lang: ro
     - name: English
-      link: /en/
+      link: /test-docs/en/
       lang: en
   social:
     - icon: fontawesome/brands/youtube 
