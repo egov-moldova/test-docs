@@ -1,4 +1,6 @@
 site_name: Documentation
+site_url: https://egov-moldova.github.io/test-docs/
+
 
 theme:
     name: material
