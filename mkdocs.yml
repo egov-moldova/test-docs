@@ -77,6 +77,7 @@ extra_css:
 
 markdown_extensions:
   - admonition
+  - pymdownx.tilde
   
 nav:
   - Acasă: index.md
@@ -90,7 +91,7 @@ nav:
   - Produse M: 
     - Produse M: mservices/index.md
     - MConnect: mservices/mconnect.md
-    - MPay: mservices/mpay.md
+    - MPay: mservices/mpay/index.md
   - Info:
     - Despre: info/about.md
     - Contacte: info/contacts.md
