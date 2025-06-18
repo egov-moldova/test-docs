@@ -1,0 +1,1 @@
+Despre elementele DevOps utilizate la AGE

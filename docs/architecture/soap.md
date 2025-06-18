@@ -1,0 +1,1 @@
+Descrierea standardului soap

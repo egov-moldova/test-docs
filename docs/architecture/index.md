@@ -1,0 +1,1 @@
+Despre elementele arhitecturale utilizate în produsele AGE

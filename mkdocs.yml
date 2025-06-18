@@ -20,6 +20,14 @@ theme:
           icon: material/shield-moon-outline
         primary: blue
         accent: indigo
+    features:
+      - navigation.instant
+      - navigation.instant.prefetch
+      - navigation.instant.progress
+      - navigation.tracking
+      - navigation.path
+      - navigation.indexes
+    
 
 plugins:
   - search
@@ -36,6 +44,10 @@ plugins:
           nav_translations:
             Acasă: Home
             Despre: About
+            Principii arhitecturale: Architecture principles
+            Standardul Soap: Soap standard
+            Produse M: MSuite
+
 extra:
   alternate:
     - name: Română
@@ -61,7 +73,19 @@ extra_css:
 
 nav:
   - Acasă: index.md
-  - Despre: info/about.md
-  - Contacte: info/contacts.md
+  - Principii arhitecturale:
+    - Principii arhitecturale: architecture/index.md
+    - Standardul Soap: architecture/soap.md
+    - Standardul REST: architecture/rest.md
+    - DevOps:
+      - DevOps: architecture/devops/index.md
+      - Helm: architecture/devops/helm.md
+  - Produse M: 
+    - Produse M: mservices/index.md
+    - MConnect: mservices/mconnect.md
+    - MPay: mservices/mpay.md
+  - Info:
+    - Despre: info/about.md
+    - Contacte: info/contacts.md
 
 copyright: © Agenția de Guvernare Electronică. Toate drepturile rezervate. 
