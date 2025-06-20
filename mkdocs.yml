@@ -47,9 +47,11 @@ plugins:
           nav_translations:
             Acasă: Home
             Despre: About
+            Introducere: Intro
             Principii arhitecturale: Architecture principles
-            Standardul Soap: Soap standard
             Produse M: MSuite
+            Scenarii de interacțiune: Workflows
+            Standardul Soap: Soap standard
 
 extra:
   alternate:
@@ -89,9 +91,11 @@ nav:
       - DevOps: architecture/devops/index.md
       - Helm: architecture/devops/helm.md
   - Produse M: 
-    - Produse M: mservices/index.md
+    - Produse M: mservices/mservices_index.md
     - MConnect: mservices/mconnect.md
-    - MPay: mservices/mpay/index.md
+    - MPay:
+      - Introducere: mservices/mpay/mpay_index.md
+      - Scenarii de interacțiune:  mservices/mpay/mpay_workflow.md
   - Info:
     - Despre: info/about.md
     - Contacte: info/contacts.md
