@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+    <url>
+        <loc>https://egov-moldova.github.io/test-docs/</loc>
+        <lastmod>2025-06-20</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ro" href="https://egov-moldova.github.io/test-docs/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://egov-moldova.github.io/test-docs/en/"/>
+    </url>
+    <url>
+        <loc>https://egov-moldova.github.io/test-docs/architecture/</loc>
+        <lastmod>2025-06-20</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ro" href="https://egov-moldova.github.io/test-docs/architecture/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://egov-moldova.github.io/test-docs/en/architecture/"/>
+    </url>
+    <url>
+        <loc>https://egov-moldova.github.io/test-docs/architecture/rest/</loc>
+        <lastmod>2025-06-20</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ro" href="https://egov-moldova.github.io/test-docs/architecture/rest/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://egov-moldova.github.io/test-docs/en/architecture/rest/"/>
+    </url>
+    <url>
+        <loc>https://egov-moldova.github.io/test-docs/architecture/soap/</loc>
+        <lastmod>2025-06-20</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ro" href="https://egov-moldova.github.io/test-docs/architecture/soap/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://egov-moldova.github.io/test-docs/en/architecture/soap/"/>
+    </url>
+    <url>
+        <loc>https://egov-moldova.github.io/test-docs/architecture/devops/</loc>
+        <lastmod>2025-06-20</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ro" href="https://egov-moldova.github.io/test-docs/architecture/devops/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://egov-moldova.github.io/test-docs/en/architecture/devops/"/>
+    </url>
+    <url>
+        <loc>https://egov-moldova.github.io/test-docs/architecture/devops/helm/</loc>
+        <lastmod>2025-06-20</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ro" href="https://egov-moldova.github.io/test-docs/architecture/devops/helm/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://egov-moldova.github.io/test-docs/en/architecture/devops/helm/"/>
+    </url>
+    <url>
+        <loc>https://egov-moldova.github.io/test-docs/info/about/</loc>
+        <lastmod>2025-06-20</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ro" href="https://egov-moldova.github.io/test-docs/info/about/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://egov-moldova.github.io/test-docs/en/info/about/"/>
+    </url>
+    <url>
+        <loc>https://egov-moldova.github.io/test-docs/info/contacts/</loc>
+        <lastmod>2025-06-20</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ro" href="https://egov-moldova.github.io/test-docs/info/contacts/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://egov-moldova.github.io/test-docs/en/info/contacts/"/>
+    </url>
+    <url>
+        <loc>https://egov-moldova.github.io/test-docs/mservices/mconnect/</loc>
+        <lastmod>2025-06-20</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ro" href="https://egov-moldova.github.io/test-docs/mservices/mconnect/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://egov-moldova.github.io/test-docs/en/mservices/mconnect/"/>
+    </url>
+    <url>
+        <loc>https://egov-moldova.github.io/test-docs/mservices/mservices_index/</loc>
+        <lastmod>2025-06-20</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ro" href="https://egov-moldova.github.io/test-docs/mservices/mservices_index/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://egov-moldova.github.io/test-docs/en/mservices/mservices_index/"/>
+    </url>
+    <url>
+        <loc>https://egov-moldova.github.io/test-docs/mservices/mpay/mpay_index/</loc>
+        <lastmod>2025-06-20</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ro" href="https://egov-moldova.github.io/test-docs/mservices/mpay/mpay_index/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://egov-moldova.github.io/test-docs/en/mservices/mpay/mpay_index/"/>
+    </url>
+    <url>
+        <loc>https://egov-moldova.github.io/test-docs/mservices/mpay/mpay_workflow/</loc>
+        <lastmod>2025-06-20</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ro" href="https://egov-moldova.github.io/test-docs/mservices/mpay/mpay_workflow/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://egov-moldova.github.io/test-docs/en/mservices/mpay/mpay_workflow/"/>
+    </url>
+    <url>
+        <loc>https://egov-moldova.github.io/test-docs/en/</loc>
+        <lastmod>2025-06-20</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://egov-moldova.github.io/test-docs/en/"/>
+        <xhtml:link rel="alternate" hreflang="ro" href="https://egov-moldova.github.io/test-docs/"/>
+    </url>
+    <url>
+        <loc>https://egov-moldova.github.io/test-docs/en/architecture/</loc>
+        <lastmod>2025-06-20</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://egov-moldova.github.io/test-docs/en/architecture/"/>
+        <xhtml:link rel="alternate" hreflang="ro" href="https://egov-moldova.github.io/test-docs/architecture/"/>
+    </url>
+    <url>
+        <loc>https://egov-moldova.github.io/test-docs/en/architecture/rest/</loc>
+        <lastmod>2025-06-20</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://egov-moldova.github.io/test-docs/en/architecture/rest/"/>
+        <xhtml:link rel="alternate" hreflang="ro" href="https://egov-moldova.github.io/test-docs/architecture/rest/"/>
+    </url>
+    <url>
+        <loc>https://egov-moldova.github.io/test-docs/en/architecture/soap/</loc>
+        <lastmod>2025-06-20</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://egov-moldova.github.io/test-docs/en/architecture/soap/"/>
+        <xhtml:link rel="alternate" hreflang="ro" href="https://egov-moldova.github.io/test-docs/architecture/soap/"/>
+    </url>
+    <url>
+        <loc>https://egov-moldova.github.io/test-docs/en/architecture/devops/</loc>
+        <lastmod>2025-06-20</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://egov-moldova.github.io/test-docs/en/architecture/devops/"/>
+        <xhtml:link rel="alternate" hreflang="ro" href="https://egov-moldova.github.io/test-docs/architecture/devops/"/>
+    </url>
+    <url>
+        <loc>https://egov-moldova.github.io/test-docs/en/architecture/devops/helm/</loc>
+        <lastmod>2025-06-20</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://egov-moldova.github.io/test-docs/en/architecture/devops/helm/"/>
+        <xhtml:link rel="alternate" hreflang="ro" href="https://egov-moldova.github.io/test-docs/architecture/devops/helm/"/>
+    </url>
+    <url>
+        <loc>https://egov-moldova.github.io/test-docs/en/info/about/</loc>
+        <lastmod>2025-06-20</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://egov-moldova.github.io/test-docs/en/info/about/"/>
+        <xhtml:link rel="alternate" hreflang="ro" href="https://egov-moldova.github.io/test-docs/info/about/"/>
+    </url>
+    <url>
+        <loc>https://egov-moldova.github.io/test-docs/en/info/contacts/</loc>
+        <lastmod>2025-06-20</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://egov-moldova.github.io/test-docs/en/info/contacts/"/>
+        <xhtml:link rel="alternate" hreflang="ro" href="https://egov-moldova.github.io/test-docs/info/contacts/"/>
+    </url>
+    <url>
+        <loc>https://egov-moldova.github.io/test-docs/en/mservices/mconnect/</loc>
+        <lastmod>2025-06-20</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://egov-moldova.github.io/test-docs/en/mservices/mconnect/"/>
+        <xhtml:link rel="alternate" hreflang="ro" href="https://egov-moldova.github.io/test-docs/mservices/mconnect/"/>
+    </url>
+    <url>
+        <loc>https://egov-moldova.github.io/test-docs/en/mservices/mservices_index/</loc>
+        <lastmod>2025-06-20</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://egov-moldova.github.io/test-docs/en/mservices/mservices_index/"/>
+        <xhtml:link rel="alternate" hreflang="ro" href="https://egov-moldova.github.io/test-docs/mservices/mservices_index/"/>
+    </url>
+    <url>
+        <loc>https://egov-moldova.github.io/test-docs/en/mservices/mpay/mpay_index/</loc>
+        <lastmod>2025-06-20</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://egov-moldova.github.io/test-docs/en/mservices/mpay/mpay_index/"/>
+        <xhtml:link rel="alternate" hreflang="ro" href="https://egov-moldova.github.io/test-docs/mservices/mpay/mpay_index/"/>
+    </url>
+    <url>
+        <loc>https://egov-moldova.github.io/test-docs/en/mservices/mpay/mpay_workflow/</loc>
+        <lastmod>2025-06-20</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://egov-moldova.github.io/test-docs/en/mservices/mpay/mpay_workflow/"/>
+        <xhtml:link rel="alternate" hreflang="ro" href="https://egov-moldova.github.io/test-docs/mservices/mpay/mpay_workflow/"/>
+    </url>
+</urlset>
