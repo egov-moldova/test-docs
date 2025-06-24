@@ -1,4 +1,4 @@
-site_name: Documentation
+site_name: eGov4Dev
 site_url: https://egov-moldova.github.io/test-docs/
 use_directory_urls: true
 
@@ -24,13 +24,9 @@ theme:
         primary: blue
         accent: indigo
     features:
-      - navigation.instant
-      - navigation.instant.prefetch
-      - navigation.instant.progress
       - navigation.tracking
       - navigation.path
-      - navigation.indexes
-    
+      - navigation.indexes 
 
 plugins:
   - search
@@ -76,6 +72,9 @@ extra:
 extra_css:
   - stylesheets/onest.css
   - stylesheets/extra.css
+
+extra_javascript:
+  - js/theme-image-switcher.js
 
 markdown_extensions:
   - admonition

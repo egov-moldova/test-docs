@@ -5,8 +5,8 @@ prestatori de servicii de plată, care oferă o varietate de instrumente de plat
 moduri în care un plătitor poate interacționa cu acesta.
 
 ##Comanda și plata online
-  
-<picture class="theme-picture">
-  <img src="./payment_process_darkmode.svg" alt="Payment flow" data-theme="dark">
-  <img src="./payment_process_lightmode.svg" alt="Payment flow" data-theme="light">
+
+<picture>
+  <source srcset="/assets/uml-diagrams/payment_process_darkmode.svg" media="(prefers-color-scheme: dark)">
+  <img src="/assets/uml-diagrams/payment_process_lightmode.svg" alt="Payment flow" style="width:100%;">
 </picture>
