@@ -53,6 +53,7 @@ plugins:
             Produse M: MSuite
             Scenarii de interacțiune: Workflows
             Standardul Soap: Soap standard
+            Parcursul integrării: Integration process
 
 extra:
   alternate:
@@ -75,11 +76,12 @@ extra:
       link: https://www.flickr.com/photos/201389958@N05/
 
 extra_css:
-  - stylesheets/onest.css
   - stylesheets/extra.css
+  - stylesheets/onest.css
+  - stylesheets/table.css
 
 extra_javascript:
-  - js/theme-image-switcher.js
+  - js/theme-switcher.js
   - js/external-links.js
 
 markdown_extensions:
@@ -101,6 +103,7 @@ nav:
     - MPay:
       - Introducere: mservices/mpay/mpay_index.md
       - Scenarii de interacțiune:  mservices/mpay/mpay_workflow.md
+      - Parcursul integrării:  mservices/mpay/mpay_integration_proccess.md
   - Info:
     - Despre: info/about.md
     - Contacte: info/contacts.md
