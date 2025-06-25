@@ -2,6 +2,48 @@ site_name: eGov4Dev
 site_url: https://egov-moldova.github.io/test-docs/
 use_directory_urls: true
 
+nav:
+  - Acasă: index.md
+  - Principii arhitecturale:
+    - Principii arhitecturale: architecture/index.md
+    - Standardul Soap: architecture/soap.md
+    - Standardul REST: architecture/rest.md
+    - DevOps:
+      - DevOps: architecture/devops/index.md
+      - Helm: architecture/devops/helm.md
+  - Produse M: 
+    - Produse M: mservices/index.md
+    - MConnect: mservices/mconnect/index.md
+    - MPay:
+      - Introducere: mservices/mpay/index.md
+      - Scenarii de interacțiune:  mservices/mpay/workflow.md
+      - Parcursul integrării:  mservices/mpay/integration_process.md
+  - Info:
+    - Despre: info/about.md
+    - Contacte: info/contacts.md
+
+plugins:
+  - search
+  - i18n:
+      docs_structure: suffix
+      languages:
+        - locale: ro
+          name: Română
+          default: true
+          build: true
+        - locale: en
+          name: English
+          build: true
+          nav_translations:
+            Acasă: Home
+            Despre: About
+            Introducere: Intro
+            Principii arhitecturale: Architecture principles
+            Produse M: MSuite
+            Scenarii de interacțiune: Workflows
+            Standardul Soap: Soap standard
+            Parcursul integrării: Integration process
+
 theme:
     name: material
     language: ro
@@ -26,34 +68,6 @@ theme:
       - navigation.tracking
       - navigation.path
       - navigation.indexes 
-
-plugins:
-  - search
-  - privacy:
-      links: true
-      links_attr_map:
-        target: _blank
-      links_noopener: true
-      links_noreferrer: true
-  - i18n:
-      docs_structure: suffix
-      languages:
-        - locale: ro
-          name: Română
-          default: true
-          build: true
-        - locale: en
-          name: English
-          build: true
-          nav_translations:
-            Acasă: Home
-            Despre: About
-            Introducere: Intro
-            Principii arhitecturale: Architecture principles
-            Produse M: MSuite
-            Scenarii de interacțiune: Workflows
-            Standardul Soap: Soap standard
-            Parcursul integrării: Integration process
 
 extra:
   alternate:
@@ -88,24 +102,4 @@ markdown_extensions:
   - admonition
   - pymdownx.tilde
   
-nav:
-  - Acasă: index.md
-  - Principii arhitecturale:
-    - Principii arhitecturale: architecture/index.md
-    - Standardul Soap: architecture/soap.md
-    - Standardul REST: architecture/rest.md
-    - DevOps:
-      - DevOps: architecture/devops/index.md
-      - Helm: architecture/devops/helm.md
-  - Produse M: 
-    - Produse M: mservices/mservices_index.md
-    - MConnect: mservices/mconnect.md
-    - MPay:
-      - Introducere: mservices/mpay/mpay_index.md
-      - Scenarii de interacțiune:  mservices/mpay/mpay_workflow.md
-      - Parcursul integrării:  mservices/mpay/mpay_integration_proccess.md
-  - Info:
-    - Despre: info/about.md
-    - Contacte: info/contacts.md
-
 copyright: © Agenția de Guvernare Electronică. Toate drepturile rezervate. 
