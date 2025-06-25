@@ -2,7 +2,6 @@ site_name: eGov4Dev
 site_url: https://egov-moldova.github.io/test-docs/
 use_directory_urls: true
 
-
 theme:
     name: material
     language: ro
@@ -30,6 +29,12 @@ theme:
 
 plugins:
   - search
+  - privacy:
+      links: true
+      links_attr_map:
+        target: _blank
+      links_noopener: true
+      links_noreferrer: true
   - i18n:
       docs_structure: suffix
       languages:
@@ -75,6 +80,7 @@ extra_css:
 
 extra_javascript:
   - js/theme-image-switcher.js
+  - js/external-links.js
 
 markdown_extensions:
   - admonition
