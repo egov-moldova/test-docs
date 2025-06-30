@@ -36,4 +36,4 @@ moduri în care un plătitor poate interacționa cu acesta.
 1. Plătitorul acceseaza MPay (<https://testmpay.gov.md> pentru testare sau <https://mpay.gov.md> pentru mediu de producție).
 Plătitorul selectează un serviciu pentru care are numarul comanzii de la prestatorul de serviciu.
 2. Plătitorul introduce numărul comenzii (de exemplu numărul comenzii/cererii, etc.)
-3. Scenariul continuă cu p.5 din 6.1 Comanda si plata online, adică comanda este căutată prin invocarea operațiunii **GetOrderDetails** a interfetei **IServiceProvider**.
+3. Scenariul continuă cu p.5 din [Comanda si plata online](./#comanda-si-plata-online), adică comanda este căutată prin invocarea operațiunii **GetOrderDetails** a interfetei **IServiceProvider**.

@@ -18,6 +18,11 @@ nav:
       - Introducere: mservices/mpay/index.md
       - Scenarii de interacțiune:  mservices/mpay/workflow.md
       - Parcursul integrării:  mservices/mpay/integration_process.md
+      - Măsuri de securitate: mservices/mpay/security.md
+      - Referințe API:
+        - Prestator de serviciu: mservices/mpay/api_references/main.md
+        - REST API: mservices/mpay/api_references/rest_api.md
+        - Pos terminal: mservices/mpay/api_references/pos_terminal.md
   - Info:
     - Despre: info/about.md
     - Contacte: info/contacts.md
@@ -43,6 +48,9 @@ plugins:
             Scenarii de interacțiune: Workflows
             Standardul Soap: Soap standard
             Parcursul integrării: Integration process
+            Măsuri de securitate: Security measures
+            Referințe API: API references
+            Prestator de serviciu: Service provider
 
 theme:
     name: material
