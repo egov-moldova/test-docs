@@ -23,6 +23,10 @@ nav:
         - Prestator de serviciu: mservices/mpay/api_references/main.md
         - REST API: mservices/mpay/api_references/rest_api.md
         - Pos terminal: mservices/mpay/api_references/pos_terminal.md
+        
+    - MSign:
+      - Introducere: mservices/msign/index.md
+      - Jurnalul modificărilor: mservices/msign/change_log.md
   - Info:
     - Despre: info/about.md
     - Contacte: info/contacts.md
@@ -42,9 +46,10 @@ plugins:
           nav_translations:
             Acasă: Home
             Despre: About
-            Introducere: Intro
-            Principii arhitecturale: Architecture principles
+            Introducere: Introduction
+            Jurnalul modificărilor: Change log
             Produse M: MSuite
+            Principii arhitecturale: Architecture principles
             Scenarii de interacțiune: Workflows
             Standardul Soap: Soap standard
             Parcursul integrării: Integration process
