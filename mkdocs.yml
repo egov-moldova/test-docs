@@ -27,6 +27,7 @@ nav:
     - MSign:
       - Introducere: mservices/msign/index.md
       - Jurnalul modificărilor: mservices/msign/change_log.md
+      - Scenarii de interacțiune: mservices/msign/interaction_scenarios.md
   - Info:
     - Despre: info/about.md
     - Contacte: info/contacts.md
@@ -50,7 +51,7 @@ plugins:
             Jurnalul modificărilor: Change log
             Produse M: MSuite
             Principii arhitecturale: Architecture principles
-            Scenarii de interacțiune: Workflows
+            Scenarii de interacțiune: Interaction scenarios
             Standardul Soap: Soap standard
             Parcursul integrării: Integration process
             Măsuri de securitate: Security measures

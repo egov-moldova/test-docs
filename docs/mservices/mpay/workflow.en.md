@@ -6,7 +6,7 @@ moduri în care un plătitor poate interacționa cu acesta.
 
 ##Comanda și plata online
 
-<picture>
-  <source srcset="/assets/uml-diagrams/payment_process_darkmode.svg" media="(prefers-color-scheme: dark)">
-  <img src="/assets/uml-diagrams/payment_process_lightmode.svg" alt="Payment flow" style="width:100%;">
+<picture class="theme-picture">
+  <img src="../../../../assets/umls/mpay/sp_payment_process/darkmode.svg" alt="Payment flow" data-theme="dark">
+  <img src="../../../../assets/umls/mpay/sp_payment_process/lightmode.svg" alt="Payment flow" data-theme="light">
 </picture>
