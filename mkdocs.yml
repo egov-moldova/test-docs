@@ -30,6 +30,7 @@ nav:
       - Scenarii de interacțiune: mservices/msign/interaction_scenarios.md
       - Parcursul integrării: mservices/msign/integration_development.md
       - Măsuri de securitate: mservices/msign/security.md
+      - Referințe API: mservices/msign/api_references.md
   - Info:
     - Despre: info/about.md
     - Contacte: info/contacts.md
@@ -117,5 +118,9 @@ extra_javascript:
 markdown_extensions:
   - admonition
   - pymdownx.tilde
+  - pymdownx.superfences
+  - pymdownx.highlight
+  - pymdownx.tabbed:
+      alternate_style: true
   
 copyright: © Agenția de Guvernare Electronică. Toate drepturile rezervate. 
