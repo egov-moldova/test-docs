@@ -14,6 +14,10 @@ nav:
   - Produse M: 
     - Produse M: mservices/index.md
     - MConnect: mservices/mconnect/index.md
+    - MPass:
+      - Introducere: mservices/mpass/index.md
+      - Jurnalul modificărilor: mservices/mpass/change_log.md
+      - Scenarii de interacțiune: mservices/mpass/interaction_scenarios.md
     - MPay:
       - Introducere: mservices/mpay/index.md
       - Scenarii de interacțiune:  mservices/mpay/workflow.md
