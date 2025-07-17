@@ -605,3 +605,7 @@ Please identify the set of required attributes (including custom attribute names
     </tr>
   </tbody>
 </table>
+
+##**Integration review and audit**
+
+The security of MPass integrating systems heavily depends on the security of the integration. Please review the provided Test cases which include security related tests to thoroughly test the security of the integration.
