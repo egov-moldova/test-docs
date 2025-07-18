@@ -20,6 +20,7 @@ nav:
       - Scenarii de interacțiune: mservices/mpass/interaction_scenarios.md
       - Parcursul integrării: mservices/mpass/integration_development.md
       - Măsuri de securitate: mservices/mpass/security.md
+      - Referințe API: mservices/mpass/saml_references.md
 
     - MPay:
       - Introducere: mservices/mpay/index.md
