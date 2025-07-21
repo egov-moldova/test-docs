@@ -17,6 +17,7 @@ nav:
       - Introducere: mservices/mconnect_events/index.md
       - Jurnalul modificărilor: mservices/mconnect_events/change_log.md
       - Scenarii de interacțiune: mservices/mconnect_events/interaction_scenarios.md
+      - Parcursul integrării: mservices/mconnect_events/integration_development.md
     - MPass:
       - Introducere: mservices/mpass/index.md
       - Jurnalul modificărilor: mservices/mpass/change_log.md
