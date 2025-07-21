@@ -13,7 +13,10 @@ validation when produced, scalable and flexible storage of events awaiting consu
 availability of events to consumers, confirmation of event consumption to ensure reliable delivery of
 events, as well as internal instruments for configuration, monitoring and troubleshooting.
 
-**INSERT IMAGE of MCONNECT EVENTS**
+<picture class="theme-picture">
+  <img src="../../../assets/images/mconnect_events/mconnect_events_dark.svg" alt="Signing flow" data-theme="dark">
+  <img src="../../../assets/images/mconnect_events/mconnect_events_light.svg" alt="Signing flow" data-theme="light">
+</picture>
 
 MConnect Events enables systems to exchange data about various events in real-time as well as in
 a disconnected way. Events are flowing from producers to MConnect Events then to consumers in
