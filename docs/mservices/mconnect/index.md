@@ -1,1 +1,0 @@
-Ghidul este pe punctul de a fi amplasat

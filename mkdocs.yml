@@ -13,7 +13,9 @@ nav:
       - Helm: architecture/devops/helm.md
   - Produse M: 
     - Produse M: mservices/index.md
-    - MConnect: mservices/mconnect/index.md
+    - MConnect Events: 
+      - Introducere: mservices/mconnect_events/index.md
+      - Jurnalul modificărilor: mservices/mconnect_events/change_log.md
     - MPass:
       - Introducere: mservices/mpass/index.md
       - Jurnalul modificărilor: mservices/mpass/change_log.md

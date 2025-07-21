@@ -4,7 +4,7 @@ Glossary:
 
 
 How to declare a link (anchor)
-   1. external inline: [Solicită certificat de sistem](https://semnatura.md/order/system-certificate
+   1. external inline: [Solicită certificat de sistem](https://semnatura.md/order/system-certificate)
    2. external inside of HTML element <a href="https://semnatura.md/order/system-certificate">Solicită certificat de sistem</a>
 
 
