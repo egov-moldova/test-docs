@@ -19,6 +19,7 @@ nav:
       - Scenarii de interacțiune: mservices/mconnect_events/interaction_scenarios.md
       - Parcursul integrării: mservices/mconnect_events/integration_development.md
       - Referințe API: mservices/mconnect_events/api_references.md
+      - Exemple: mservices/mconnect_events/sample.md
     - MPass:
       - Introducere: mservices/mpass/index.md
       - Jurnalul modificărilor: mservices/mpass/change_log.md
@@ -63,16 +64,17 @@ plugins:
           nav_translations:
             Acasă: Home
             Despre: About
+            Exemple: Examples
             Introducere: Introduction
             Jurnalul modificărilor: Change log
-            Produse M: MSuite
+            Măsuri de securitate: Security measures
+            Parcursul integrării: Integration development
+            Prestator de serviciu: Service provider
             Principii arhitecturale: Architecture principles
+            Produse M: MSuite
+            Referințe API: API references
             Scenarii de interacțiune: Interaction scenarios
             Standardul Soap: Soap standard
-            Parcursul integrării: Integration development
-            Măsuri de securitate: Security measures
-            Referințe API: API references
-            Prestator de serviciu: Service provider
 
 theme:
     name: material
