@@ -20,6 +20,7 @@ nav:
       - Parcursul integrării: mservices/mconnect_events/integration_development.md
       - Referințe API: mservices/mconnect_events/api_references.md
       - Exemple: mservices/mconnect_events/sample.md
+      - Librarii de integrare: mservices/mconnect_events/framework.md
     - MPass:
       - Introducere: mservices/mpass/index.md
       - Jurnalul modificărilor: mservices/mpass/change_log.md
@@ -27,7 +28,6 @@ nav:
       - Parcursul integrării: mservices/mpass/integration_development.md
       - Măsuri de securitate: mservices/mpass/security.md
       - Referințe API: mservices/mpass/saml_references.md
-
     - MPay:
       - Introducere: mservices/mpay/index.md
       - Scenarii de interacțiune:  mservices/mpay/workflow.md
@@ -37,7 +37,6 @@ nav:
         - Prestator de serviciu: mservices/mpay/api_references/main.md
         - REST API: mservices/mpay/api_references/rest_api.md
         - Pos terminal: mservices/mpay/api_references/pos_terminal.md
-        
     - MSign:
       - Introducere: mservices/msign/index.md
       - Jurnalul modificărilor: mservices/msign/change_log.md
@@ -45,9 +44,7 @@ nav:
       - Parcursul integrării: mservices/msign/integration_development.md
       - Măsuri de securitate: mservices/msign/security.md
       - Referințe API: mservices/msign/api_references.md
-  - Info:
-    - Despre: info/about.md
-    - Contacte: info/contacts.md
+
 
 plugins:
   - search
@@ -67,6 +64,7 @@ plugins:
             Exemple: Examples
             Introducere: Introduction
             Jurnalul modificărilor: Change log
+            Librarii de integrare: Integration libraries
             Măsuri de securitate: Security measures
             Parcursul integrării: Integration development
             Prestator de serviciu: Service provider
@@ -133,6 +131,7 @@ extra_javascript:
 markdown_extensions:
   - admonition
   - pymdownx.tilde
+  - pymdownx.snippets
   - pymdownx.superfences
   - pymdownx.highlight
   - pymdownx.tabbed:
