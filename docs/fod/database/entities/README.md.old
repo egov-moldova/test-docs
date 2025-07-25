@@ -1,0 +1,212 @@
+# Prezentare Generală a Entităților FOD
+
+Această pagină oferă o prezentare generală a tuturor entităților din sistemul Front Office Digital (FOD), organizate pe categorii funcționale.
+
+## Entități de Bază
+
+### [BaseEntity](./BaseEntity.md)
+Clasa de bază pentru majoritatea entităților din sistem. Oferă câmpuri comune de audit (CreateDate, UpdateDate, CreateUserId, etc.) și asigură trasabilitatea completă a modificărilor pentru conformitate și audit.
+
+## Entități Principale
+
+### [FodRequest](./FodRequest.md)
+Entitatea centrală care reprezintă o cerere depusă de cetățean în sistem. Conține toate informațiile despre solicitant, tipul cererii, statusul procesării, plăți, livrare și legături către serviciile solicitate.
+
+### [FodService](./FodService.md)
+Definește serviciile publice disponibile în sistem (ex: eliberare acte de identitate, certificate). Include informații despre cost, termene de execuție, furnizorul de servicii și documentele necesare.
+
+### [FodServiceProvider](./FodServiceProvider.md)
+Reprezintă instituțiile publice care furnizează servicii (ex: ASP, ANSA, CNAS). Conține date de contact, configurări de integrare și informații despre serviciile oferite.
+
+### [FodServiceRequest](./FodServiceRequest.md)
+Leagă o cerere principală (FodRequest) de serviciile specifice solicitate. Urmărește statusul individual al fiecărui serviciu în cadrul unei cereri complexe.
+
+## Gestiunea Documentelor
+
+### [File](./File.md)
+Stochează metadatele fișierelor încărcate (nume, tip MIME, referință către conținut). Separă informațiile despre fișier de conținutul efectiv pentru optimizarea performanței.
+
+### [FileContent](./FileContent.md)
+Conține conținutul binar efectiv al fișierelor. Separată de metadate pentru a permite listarea rapidă a documentelor fără încărcarea conținutului în memorie.
+
+### [FodRequestFile](./FodRequestFile.md)
+Asociază fișierele încărcate cu cererile principale. Permite atașarea mai multor documente justificative la o cerere.
+
+### [FodServiceRequestFile](./FodServiceRequestFile.md)
+Asociază fișierele cu cererile de servicii specifice. Utilizat pentru documente specifice unui anumit serviciu din cadrul cererii.
+
+### [FodDocumentType](./FodDocumentType.md)
+Catalogul tipurilor de documente acceptate în sistem (ex: buletin, pașaport, certificat de naștere). Include validări și cerințe specifice pentru fiecare tip.
+
+### [SignableDocument](./SignableDocument.md)
+Reprezintă documente care pot fi semnate digital. Stochează hash-ul documentului și informații despre semnături pentru validare și non-repudiere.
+
+## Utilizatori și Autorizare
+
+### [UserProfile](./UserProfile.md)
+Profilul utilizatorului în sistem. Conține date personale, preferințe, rol și legături către organizații. Integrat cu sistemele de autentificare naționale (MPass).
+
+### [FodUserProfileRole](./FodUserProfileRole.md)
+Definește rolurile utilizatorilor în sistem (cetățean, operator CUPS, administrator). Controlează permisiunile și accesul la funcționalități.
+
+### [FodUserProfileOrganization](./FodUserProfileOrganization.md)
+Asociază utilizatorii cu organizații. Permite gestionarea angajaților instituțiilor publice și a reprezentanților companiilor.
+
+### [FodUserSignature](./FodUserSignature.md)
+Stochează semnăturile digitale ale utilizatorilor pentru autentificare și semnare documente. Include certificate digitale și chei publice.
+
+## Procesare și Workflow
+
+### [FodRequestType](./FodRequestType.md)
+Tipurile de cereri disponibile în sistem (ex: cerere complexă, cerere simplă). Definește fluxul de procesare și serviciile disponibile pentru fiecare tip.
+
+### [FodRequestTypeService](./FodRequestTypeService.md)
+Asociază tipurile de cereri cu serviciile disponibile. Definește care servicii pot fi solicitate pentru fiecare tip de cerere.
+
+### [FodExecutionTerms](./FodExecutionTerm.md)
+Termenii de execuție pentru cereri și servicii. Include termene legale, zile lucrătoare și reguli de calcul pentru estimarea datei de finalizare.
+
+### [WorkingProgram](./WorkingProgram.md)
+Programul de lucru al instituțiilor. Utilizat pentru calculul corect al termenelor de execuție și programarea vizitelor.
+
+### [ExceptionWorkingProgram](./ExceptionWorkingProgram.md)
+Excepții la programul normal de lucru (sărbători, zile speciale). Asigură calculul corect al termenelor în perioade excepționale.
+
+## Plăți și Facturare
+
+### [FodRequestPayment](./FodRequestPayment.md)
+Gestionează plățile pentru cereri. Integrare cu sistemul național de plăți electronice (MPay) și urmărirea statusului plăților.
+
+### [FodAdditionalInvoice](./FodAdditionalInvoice.md)
+Facturi adiționale generate în timpul procesării cererii (taxe suplimentare, servicii express). Permite ajustarea costurilor după depunerea cererii.
+
+### [ServiceRequestDiscount](./ServiceRequestDiscount.md)
+Reduceri aplicate la servicii pentru anumite categorii de beneficiari (pensionari, persoane cu dizabilități). Include reguli de eligibilitate și procente de reducere.
+
+## Livrare și Distribuție
+
+### [ServiceRequestDelivery](./ServiceRequestDelivery.md)
+Detalii despre livrarea documentelor prin curier. Integrare cu MDelivery pentru urmărirea coletelor și confirmarea primirii.
+
+### [FodRequestDelivery](./FodRequestDelivery.md)
+Informații de livrare pentru cererile principale. Include adresa de livrare, metoda preferată și costurile asociate.
+
+### [ServiceRequestDeliveryStatusLog](./ServiceRequestDeliveryStatusLog.md)
+Istoric complet al statusurilor de livrare. Permite urmărirea în timp real a coletelor și auditarea procesului de livrare.
+
+### [FodRequestDeliveryStatusLog](./FodRequestDeliveryStatusLog.md)
+Jurnalul statusurilor de livrare pentru cereri principale. Oferă transparență completă asupra procesului de livrare.
+
+### [FodPickupLocation](./FodPickupLocation.md)
+Locațiile de ridicare disponibile pentru documente (ghișee, centre CUPS). Include adrese, program de lucru și servicii disponibile.
+
+## Date Adiționale și Personalizare
+
+### [FodAdditionalData](./FodAdditionalData.md)
+Permite stocarea de date adiționale specifice pentru anumite tipuri de cereri. Oferă flexibilitate fără modificarea schemei de bază.
+
+### [FodServiceAdditionalData](./FodServiceAdditionalData.md)
+Date adiționale la nivel de serviciu. Permite personalizarea informațiilor colectate pentru servicii specifice.
+
+### [FodAdditionalDataTypeValue](./FodAdditionalDataTypeValue.md)
+Valorile posibile pentru câmpurile de date adiționale. Implementează validări și liste de selecție pentru câmpuri personalizate.
+
+### [FodAdditionalRequest](./FodAdditionalRequest.md)
+Cereri suplimentare asociate cu o cerere principală. Permite gestionarea cererilor conexe sau dependente.
+
+### [FodAdditionalServiceRequest](./FodAdditionalServiceRequest.md)
+Servicii adiționale solicitate în cadrul procesării. Utilizat pentru servicii opționale sau generate automat.
+
+### [FodServiceRequestAdditionalData](./FodServiceRequestAdditionalData.md)
+Date specifice pentru cererile de servicii individuale. Stochează informații particulare necesare procesării.
+
+## Răspunsuri și Rezultate
+
+### [FodResponseDocument](./FodResponseDocument.md)
+Documentele generate ca răspuns la cereri (certificate, adeverințe). Include referințe către fișiere și metadate specifice.
+
+### [FodResponseJson](./FodResponseJson.md)
+Răspunsuri în format JSON de la serviciile externe. Permite integrarea flexibilă cu diverse API-uri guvernamentale.
+
+### [FodServiceRequestResponseData](./FodServiceRequestResponseData.md)
+Date de răspuns pentru cererile de servicii individuale. Stochează rezultatele procesării pentru fiecare serviciu.
+
+### [FodResponseDataMDocsDocument](./FodResponseDataMDocsDocument.md)
+Documente primite prin sistemul MDocs. Facilitează schimbul de documente între instituții publice.
+
+## Integrări Externe
+
+### [FodMDocsDocumentShare](./FodMDocsDocumentShare.md)
+Partajarea documentelor prin platforma MDocs. Permite accesul securizat la documente între instituții.
+
+### [FodApostilationDetails](./FodApostilationDetails.md)
+Detalii despre procesul de apostilare pentru documente internaționale. Include status, costuri și termene specifice.
+
+### [RSSPAExecutionTerm](./RSSPAExecutionTerm.md)
+Termene de execuție din Registrul de Stat al Serviciilor Publice. Asigură conformitatea cu termenele legale oficiale.
+
+## Comunicare și Notificări
+
+### [FodNotificationType](./FodNotificationType.md)
+Tipurile de notificări disponibile în sistem (email, SMS, push). Configurează canalele de comunicare cu cetățenii.
+
+### [FodTermsAndCondition](./FodTermsAndCondition.md)
+Termenii și condițiile de utilizare a serviciilor. Include versiuni, istoric și acceptare de către utilizatori.
+
+## Date Structurate
+
+### [FodRequestJson](./FodRequestJson.md)
+Date JSON flexibile pentru cereri. Permite stocarea de informații structurate fără modificarea schemei.
+
+### [FodRequestJsonSignature](./FodRequestJsonSignature.md)
+Semnături pentru datele JSON ale cererilor. Asigură integritatea și autenticitatea datelor structurate.
+
+### [FodResponseJsonSignature](./FodResponseJsonSignature.md)
+Semnături pentru răspunsurile JSON. Garantează că răspunsurile nu au fost modificate.
+
+### [JsonSchema](./JsonSchema.md)
+Scheme JSON pentru validarea datelor structurate. Definește formatul și regulile pentru date flexibile.
+
+## Alte Entități
+
+### [FodPictures](./FodPictures.md)
+Gestionarea imaginilor în sistem (fotografii pentru documente, avatare utilizatori). Include procesare și validare imagini.
+
+### [FodRequestorStatute](./FodRequestorStatute.md)
+Statutele speciale ale solicitanților (veteran, persoană cu dizabilități). Utilizat pentru aplicarea de beneficii și reduceri.
+
+### [FodSignature](./FodSignature.md)
+Semnături digitale generice în sistem. Oferă funcționalități de semnare pentru diverse tipuri de documente.
+
+## Navigare Rapidă
+
+- [Diagrama Relațiilor între Entități](./entity-relationships.md)
+- [Ghid de Utilizare a Entităților](./usage-guide.md)
+- [Best Practices pentru Dezvoltatori](./best-practices.md)
+
+## Convenții și Standarde
+
+Toate entitățile urmează aceste convenții:
+
+1. **Moștenire din BaseEntity**: Majoritatea entităților moștenesc BaseEntity pentru audit trail
+2. **Identificatori GUID**: Toate entitățile folosesc GUID pentru chei primare
+3. **Nullable by Design**: Câmpurile opționale sunt nullable pentru flexibilitate
+4. **Soft Delete**: Preferăm marcarea ca șters în loc de ștergere fizică
+5. **Audit Trail**: Toate modificările sunt trasabile prin câmpurile din BaseEntity
+
+## Indexare și Performanță
+
+Pentru performanță optimă, recomandăm:
+
+- Indexare pe câmpurile de căutare frecventă (IDNP, RequestNumber)
+- Indexare pe câmpurile de filtrare (Status, CreateDate)
+- Indexare pe cheile străine pentru JOIN-uri rapide
+- Partitionare pentru tabele mari (FodRequest, File)
+
+## Securitate și Conformitate
+
+- Date personale criptate în repaus
+- Acces bazat pe roluri (RBAC)
+- Audit trail complet pentru GDPR
+- Validare strictă a datelor de intrare
+- Sanitizare pentru prevenirea SQL injection

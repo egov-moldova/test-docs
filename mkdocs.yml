@@ -44,7 +44,268 @@ nav:
       - Parcursul integrării: mservices/msign/integration_development.md
       - Măsuri de securitate: mservices/msign/security.md
       - Referințe API: mservices/msign/api_references.md
-
+  - FOD:
+    - Introducere: fod/index.md
+    - Aplicația Fod:
+      - Introducere: fod/aplicatia/index.md
+      - Cerinte: fod/aplicatia/cerinte.md
+      - Cunostinte: fod/aplicatia/cunostinte.md
+      - Crearea soluției: fod/aplicatia/solution create.md
+      - Structura soluției: fod/aplicatia/structura solutiei.md
+      - Descriere frontoffice: fod/aplicatia/frontoffice.md
+      - Creare proiect Frontoffice: fod/aplicatia/creare proiect frontoffice.md
+      - Descrierea Frontoffice-ului: fod/aplicatia/frontoffice.md
+      - Instalare librarii fod: fod/aplicatia/instalare librarii fod.md
+      - Utilizarea stilurilor FOD: fod/aplicatia/utilizarea stilurilor fod.md
+      - Înregistrarea serviciilor client: fod/aplicatia/inregistrarea serviciilor client.md
+      - Ghid de depunere a unei solicitari: fod/aplicatia/ghid-depunere-solicitare.md
+      - Depunere solicitare: fod/aplicatia/depunere.md
+      - Pasul Detaliile solicitantului: fod/aplicatia/detalii solicitant.md
+      - Pasul Detaliile serviciului: fod/aplicatia/detalii serviciu.md
+      - Pasul de apostilare: fod/aplicatia/apostilare.md
+      - Pasul modului de recepționare: fod/aplicatia/mod receptionare.md
+      - Pasul de confirmare a datelor: fod/aplicatia/confirmarea datelor.md
+      - Pasul de semnare: fod/aplicatia/semnare.md
+      - Pasul de achitare: fod/aplicatia/achitare.md
+      - Pasul de finalizare: fod/aplicatia/finalizare.md
+      - Pagina de verificare a solicitării: fod/aplicatia/verificare.md
+    - Configurare Fod:
+      - Roluri și context implicite: fod/configurare/roluri implicite.md
+      - Configurare roluri implicite: fod/configurare/configurare roluri implicite.md
+      - Configurare roluri particularizate: fod/configurare/configurare roluri particularizate.md
+      - MPass: fod/configurare/mpass.md
+      - Limbile disponibile: fod/configurare/configurare limbilor disponibile.md
+    - Componente:
+      - Alert: fod/componente/FodAlert.md
+      - Badge: fod/componente/FodBadge.md
+      - Button: fod/componente/FodButton.md
+      - Button Group: fod/componente/FodButtonGroup.md
+      - Card: fod/componente/FodCard.md
+      - CardWrapper: fod/componente/FodCardWrapper.md
+      - Checkbox: fod/componente/FodCheckbox.md
+      - CheckBox2: fod/componente/FodCheckBox2.md
+      - Chips: fod/componente/FodChip.md
+      - ChipSet: fod/componente/FodChipSet.md
+      - Collapse: fod/componente/FodCollapse.md
+      - Container: fod/componente/FodContainer.md
+      - Custom Input Select: fod/componente/FodCustomInputSelect.md
+      - Custom Multiple Group Select: fod/componente/FodCustomMultipleGroupSelect.md
+      - DataTable: fod/componente/FodDataTable.md
+      - Display: fod/componente/FodDisplay.md
+      - Column: fod/componente/FodColumn.md
+      - Tr: fod/componente/FodTr.md
+      - Td: fod/componente/FodTd.md
+      - Th: fod/componente/FodTh.md
+      - THeadRow: fod/componente/FodTHeadRow.md
+      - TFootRow: fod/componente/FodTFootRow.md
+      - TableSortLabel: fod/componente/FodTableSortLabel.md
+      - DatePicker: fod/componente/FodDatePicker.md
+      - DateRangePicker: fod/componente/FodDateRangePicker.md
+      - Drawer: fod/componente/FodDrawer.md
+      - Dropdown: fod/componente/FodDropdown.md
+      - Exception Days: fod/componente/FodExceptionDays.md
+      - Expansion Panels: fod/componente/FodExpansionPanels.md
+      - FAQ Viewer: fod/componente/FodFaqViewer.md
+      - Footer: fod/componente/FodFooter.md
+      - Grid: fod/componente/FodGrid.md
+      - Group Select: fod/componente/FodGroupSelect.md
+      - Header: fod/componente/FodHeader.md
+      - Icon: fod/componente/FodIcon.md
+      - Icon Button: fod/componente/FodIconButton.md
+      - Image: fod/componente/FodImage.md
+      - Input: fod/componente/FodInput.md
+      - Input 1: fod/componente/FodInput1.md
+      - Input Adornment: fod/componente/FodInputAdornment.md
+      - Input Checkbox: fod/componente/FodInputCheckbox.md
+      - Input Control: fod/componente/FodInputControl.md
+      - Input File: fod/componente/FodInputFile.md
+      - Input Filtered Select: fod/componente/FodInputFilteredSelect.md
+      - Inline Checkbox: fod/componente/FodInlineCheckbox.md
+      - Input Label: fod/componente/FodInputLabel.md
+      - Input Nullable Number: fod/componente/FodInputNullableNumber.md
+      - Input Number: fod/componente/FODInputNumber.md
+      - Language: fod/componente/FodLanguage.md
+      - Input Radio: fod/componente/FODInputRadio.md
+      - Input Radio Group: fod/componente/FODInputRadioGroup.md
+      - Input Select: fod/componente/FODInputSelect.md
+      - Input Text: fod/componente/FODInputText.md
+      - Input Wrapper: fod/componente/FODInputWrapper.md
+      - Layout: fod/componente/FodLayout.md
+      - Link: fod/componente/FodLink.md
+      - MainContent: fod/componente/FodMainContent.md
+      - List: fod/componente/FodList.md
+      - List Item: fod/componente/FodListItem.md
+      - Loading: fod/componente/FodLoading.md
+      - Loading Circular: fod/componente/FodLoadingCircular.md
+      - Loading Linear: fod/componente/FodLoadingLinear.md
+      - Menu: fod/componente/FodMenu.md
+      - MenuItem: fod/componente/FodMenuItem.md
+      - Modal: fod/componente/FodModal.md
+      - Nav Menu: fod/componente/FodNavMenu.md
+      - Nav Group: fod/componente/FodNavGroup.md
+      - Nav Link: fod/componente/FodNavLink.md
+      - NotificationProvider: fod/componente/FodNotificationProvider.md
+      - Number Box: fod/componente/FodNumberBox.md
+      - Overlay: fod/componente/FodOverlay.md
+      - Page Content Navigation: fod/componente/FodPageContentNavigation.md
+      - Pagination: fod/componente/FodPagination.md
+      - Paper: fod/componente/FodPaper.md
+      - Popover: fod/componente/FodPopover.md
+      - Radio: fod/componente/FodRadio.md
+      - Range Input: fod/componente/FodRangeInput.md
+      - Rating: fod/componente/FodRating.md
+      - Recaptcha: fod/componente/FodRecaptcha.md
+      - Search Select: fod/componente/FodSearchSelect.md
+      - Select: fod/componente/FodSelect.md
+      - Select1: fod/componente/FodSelect1.md
+      - Spacer: fod/componente/FodSpacer.md
+      - Tab Control: fod/componente/FodTabControl.md
+      - Table: fod/componente/FODTable.md
+      - Text: fod/componente/FodText.md
+      - TextArea: fod/componente/FodTextArea.md
+      - Textbox: fod/componente/FodTextbox.md
+      - TextField: fod/componente/FodTextField.md
+      - Toolbar: fod/componente/FodToolbar.md
+      - Tooltip: fod/componente/Tooltip.md
+      - FodTooltip: fod/componente/FodTooltip.md
+      - User Info: fod/componente/FodUserInfo.md
+      - ValidateExtras: fod/componente/FodValidateExtras.md
+      - Wizard: fod/componente/FodWizard.md
+      - WizardStep: fod/componente/FodWizardStep.md
+      - WizardSteps: fod/componente/FodWizardSteps.md
+      - WizardLoadingCircle: fod/componente/FodWizardLoadingCircle.md
+      - Virtualize: fod/componente/FodVirtualize.md
+      - Mask: fod/componente/FodMask.md
+      - FileViewer: fod/componente/FileViewer.md
+      - FileView: fod/componente/FodFileView.md
+      - FileList: fod/componente/FileList.md
+      - Navigate: fod/componente/FodNavigate.md
+      - Login: fod/componente/FODLogin.md
+      - LanguageSelector: fod/componente/LanguageSelector.md
+      - CultureSelector: fod/componente/CultureSelector.md
+      - OutsideHandleContainer: fod/componente/OutsideHandleContainer.md
+    - Componente business:
+      - Afișarea costului: fod/componente/bussiness/FodRequestCost.md
+      - Datele solicitantului: fod/componente/bussiness/FodRequestor.md
+      - Person: fod/componente/FodPerson.md
+      - Status cerere: fod/componente/business/FodRequestStatus.md
+      - Afișarea Datelor solicitantului: fod/componente/bussiness/FodRequestorDisplay.md
+      - ApplicationModelLoader: fod/componente/FodApplicationModelLoader.md
+      - Apostila: fod/componente/FodApostila.md
+      - Apostila Display: fod/componente/FodApostilaDisplay.md
+      - Delivery Display: fod/componente/FodDeliveryDisplay.md
+      - Service Request Status: fod/componente/FodServiceRequestStatus.md
+      - Service Request Status Response: fod/componente/FodServiceRequestStatusResponse.md
+      - Service Requests Statistics: fod/componente/FodServiceRequestsStatistics.md
+      - Verify Document: fod/componente/FodVerifyDocument.md
+      - Verify Document Response: fod/componente/FodVerifyDocumentResponse.md
+      - Feedback: fod/componente/FodFeedback.md
+      - Feedback Badge: fod/componente/FodFeedbackBadge.md
+      - Context Provider: fod/componente/FodContextProvider.md
+      - Context Selector: fod/componente/FodContextSelector.md
+      - Context Selector Card: fod/componente/FodContextSelectorCard.md
+      - Context Cleaner: fod/componente/FodContextCleaner.md
+      - Request Options: fod/componente/FodRequestOptions.md
+      - Filter: fod/componente/FodFilter.md
+      - MPay Invoice Button: fod/componente/MPayInvoiceButton.md
+      - On Behalf Of Radio Group: fod/componente/FODInputOnBehalfOfRadioGroup.md
+    - Servicii:
+      - ICurrentUserContextService: fod/servicii/ICurrentUserContextService.md
+      - IRequestService: fod/servicii/IRequestService.md
+      - ApostilaComponentService: fod/servicii/ApostilaComponentService.md
+      - AttributeHandlerService: fod/servicii/AttributeHandlerService.md
+      - AuthenticationService: fod/servicii/AuthenticationService.md
+      - BreakpointService: fod/servicii/BreakpointService.md
+      - CaptchaCallbackService: fod/servicii/CaptchaCallbackService.md
+      - ConfigurationService: fod/servicii/ConfigurationService.md
+      - ContextService: fod/servicii/ContextService.md
+      - CostCalculatorService: fod/servicii/CostCalculatorService.md
+      - CultureService: fod/servicii/CultureService.md
+      - DataRequestHandlerService: fod/servicii/DataRequestHandlerService.md
+      - ExceptionDaysService: fod/servicii/ExceptionDaysService.md
+      - FeedbackComponentService: fod/servicii/FeedbackComponentService.md
+      - FileUploadService: fod/servicii/FileUploadService.md
+      - FodNotificationService: fod/servicii/FodNotificationService.md
+      - FodPopoverService: fod/servicii/FodPopoverService.md
+      - JsApiService: fod/servicii/JsApiService.md
+      - NameService: fod/servicii/NameService.md
+      - PersonComponentService: fod/servicii/PersonComponentService.md
+      - PrintingService: fod/servicii/PrintingService.md
+      - RecaptchaService: fod/servicii/RecaptchaService.md
+      - RequestStatusService: fod/servicii/RequestStatusService.md
+      - RequestorComponentService: fod/servicii/RequestorComponentService.md
+      - ResizeBasedService: fod/servicii/ResizeBasedService.md
+      - ScrollManager: fod/servicii/ScrollManager.md
+      - SelectableItemsService: fod/servicii/SelectableItemsService.md
+      - ServiceRequestStatusService: fod/servicii/ServiceRequestStatusService.md
+      - ServiceRequestStatisticsService: fod/servicii/ServiceRequestStatisticsService.md
+      - SingleFileUploadService: fod/servicii/SingleFileUploadService.md
+      - UserService: fod/servicii/UserService.md
+      - ValidateExtrasService: fod/servicii/ValidateExtrasService.md
+      - VerifyDocumentService: fod/servicii/VerifyDocumentService.md
+      - KeyInterceptor: fod/servicii/KeyInterceptor.md
+      - OrderNumberGenerator: fod/servicii/OrderNumberGenerator.md
+      - EstimatedDateCalculator: fod/servicii/EstimatedDateCalculator.md
+      - WorkingProgramService: fod/servicii/WorkingProgramService.md
+      - HashGenerator: fod/servicii/HashGenerator.md
+      - XmlGenerator: fod/servicii/XmlGenerator.md
+      - FaqService: fod/servicii/FaqService.md
+      - ApplicationModelLoader: fod/servicii/ApplicationModelLoader.md
+    - Modele:
+      - UserContext: fod/modele/UserContext.md
+      - FodRequestorModel: fod/modele/IRequestor.md
+    - Database Entities:
+      - BaseEntity: fod/database/entities/BaseEntity.md
+      - ExceptionWorkingProgram: fod/database/entities/ExceptionWorkingProgram.md
+      - File: fod/database/entities/File.md
+      - FileContent: fod/database/entities/FileContent.md
+      - FodAdditionalData: fod/database/entities/FodAdditionalData.md
+      - FodAdditionalDataTypeValue: fod/database/entities/FodAdditionalDataTypeValue.md
+      - FodAdditionalInvoice: fod/database/entities/FodAdditionalInvoice.md
+      - FodAdditionalRequest: fod/database/entities/FodAdditionalRequest.md
+      - FodAdditionalServiceRequest: fod/database/entities/FodAdditionalServiceRequest.md
+      - FodApostilationDetails: fod/database/entities/FodApostilationDetails.md
+      - FodDocumentType: fod/database/entities/FodDocumentType.md
+      - FodExecutionTerm: fod/database/entities/FodExecutionTerm.md
+      - FodMDocsDocumentShare: fod/database/entities/FodMDocsDocumentShare.md
+      - FodNotificationType: fod/database/entities/FodNotificationType.md
+      - FodPickupLocation: fod/database/entities/FodPickupLocation.md
+      - FodPictures: fod/database/entities/FodPictures.md
+      - FodRequest: fod/database/entities/FodRequest.md
+      - FodRequestDelivery: fod/database/entities/FodRequestDelivery.md
+      - FodRequestDeliveryStatusLog: fod/database/entities/FodRequestDeliveryStatusLog.md
+      - FodRequestFile: fod/database/entities/FodRequestFile.md
+      - FodRequestJson: fod/database/entities/FodRequestJson.md
+      - FodRequestJsonSignature: fod/database/entities/FodRequestJsonSignature.md
+      - FodRequestPayment: fod/database/entities/FodRequestPayment.md
+      - FodRequestType: fod/database/entities/FodRequestType.md
+      - FodRequestTypeService: fod/database/entities/FodRequestTypeService.md
+      - FodRequestorStatute: fod/database/entities/FodRequestorStatute.md
+      - FodResponseDataMDocsDocument: fod/database/entities/FodResponseDataMDocsDocument.md
+      - FodResponseDocument: fod/database/entities/FodResponseDocument.md
+      - FodResponseJson: fod/database/entities/FodResponseJson.md
+      - FodResponseJsonSignature: fod/database/entities/FodResponseJsonSignature.md
+      - FodService: fod/database/entities/FodService.md
+      - FodServiceAdditionalData: fod/database/entities/FodServiceAdditionalData.md
+      - FodServiceDocumentType: fod/database/entities/FodServiceDocumentType.md
+      - FodServiceProvider: fod/database/entities/FodServiceProvider.md
+      - FodServiceRequest: fod/database/entities/FodServiceRequest.md
+      - FodServiceRequestAdditionalData: fod/database/entities/FodServiceRequestAdditionalData.md
+      - FodServiceRequestFile: fod/database/entities/FodServiceRequestFile.md
+      - FodServiceRequestResponseData: fod/database/entities/FodServiceRequestResponseData.md
+      - FodSignature: fod/database/entities/FodSignature.md
+      - FodTermsAndCondition: fod/database/entities/FodTermsAndCondition.md
+      - FodUserProfileOrganization: fod/database/entities/FodUserProfileOrganization.md
+      - FodUserProfileRole: fod/database/entities/FodUserProfileRole.md
+      - FodUserSignature: fod/database/entities/FodUserSignature.md
+      - JsonSchema: fod/database/entities/JsonSchema.md
+      - RSSPAExecutionTerm: fod/database/entities/RSSPAExecutionTerm.md
+      - ServiceRequestDelivery: fod/database/entities/ServiceRequestDelivery.md
+      - ServiceRequestDeliveryStatusLog: fod/database/entities/ServiceRequestDeliveryStatusLog.md
+      - ServiceRequestDiscount: fod/database/entities/ServiceRequestDiscount.md
+      - SignableDocument: fod/database/entities/SignableDocument.md
+      - UserProfile: fod/database/entities/UserProfile.md
+      - WorkingProgram: fod/database/entities/WorkingProgram.md
 
 plugins:
   - search

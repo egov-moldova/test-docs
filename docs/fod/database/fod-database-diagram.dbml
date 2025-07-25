@@ -1,0 +1,597 @@
+// FOD Database Schema for dbdiagram.io
+// Generated from FOD.Components Entity Framework entities
+
+// Entitate de bază care oferă câmpuri comune de audit pentru toate entitățile care moștenesc din ea
+Table BaseEntity {
+  Id uniqueidentifier [pk]
+  CreateDate datetime2
+  UpdateDate datetime2
+  CreateUserId nvarchar(255)
+  UpdateUserId nvarchar(255)
+  CreateUserName nvarchar(255)
+  UpdateUserName nvarchar(255)
+}
+
+// Profilul utilizatorilor sistemului FOD - angajați ai instituțiilor care procesează cereri
+Table UserProfile {
+  Id uniqueidentifier [pk]
+  Idnp nvarchar(13) [not null]
+  FirstName nvarchar(255)
+  LastName nvarchar(255)
+}
+
+// Cererea principală depusă de cetățeni pentru servicii guvernamentale - entitatea centrală a sistemului
+Table FodRequest {
+  Id uniqueidentifier [pk]
+  FodRequestTypeId uniqueidentifier [ref: > FodRequestType.Id]
+  RequestorType int [not null]
+  RequestorFirstName nvarchar(255) [not null]
+  RequestorLastName nvarchar(255) [not null]
+  RequestorCompanyName nvarchar(255)
+  RequestorIdnp nvarchar(13) [not null]
+  RequestorIdno nvarchar(50)
+  RequestorRole nvarchar(255)
+  RequestorEmail nvarchar(255)
+  RequestorPhone nvarchar(50)
+  NonRezidentDocumentNumber nvarchar(255)
+  RequestorMPowerAuthorization nvarchar(255)
+  MPowerAuthorizationCode nvarchar(255)
+  MPowerAuthorizingPartyName nvarchar(255)
+  MPowerAuthorizingIdn nvarchar(13)
+  MPowerFullName nvarchar(255)
+  AuthorizingPartyType int
+  OnBehalfOn int
+  RequestNumber nvarchar(50)
+  Status int
+  FodStatus int
+  RequiresResponseOnPaper bit
+  RequiresDelivery bit
+  IsFromBackOffice bit
+  SubmissionDate datetime2
+  EstimatedResolveDate datetime2
+  PaidStatus int
+  PaymentDate datetime2
+  ProcessingDate datetime2
+  PaymentConfirmDate datetime2
+  PaymentInvoiceId nvarchar(255)
+  PaymentMethod nvarchar(50)
+  IsCups bit
+  CupsIdn nvarchar(13)
+  CupsFirstName nvarchar(255)
+  CupsLastName nvarchar(255)
+  CupsMPowerNumber nvarchar(50)
+  DeliveryId uniqueidentifier [ref: > ServiceRequestDelivery.Id]
+  ResponsibleUserId uniqueidentifier [ref: > UserProfile.Id]
+  RequestSignableDocumentId uniqueidentifier [ref: > SignableDocument.Id]
+  Cost decimal(18,2)
+  JsonId uniqueidentifier [ref: > FodRequestJson.Id]
+  RequiresApostilation bit
+  ApostilationDetailsId uniqueidentifier [ref: > FodApostilationDetails.Id]
+  ExecutionTermsId uniqueidentifier [ref: > FodExecutionTerm.Id]
+  ServiceProviderNumber nvarchar(255)
+  FinalEstimatedResolveDate datetime2
+  TermsAndConditionsAccepted bit
+  RetireeWithAnAgeLimit bit
+  PersonWithDisability bit
+  MPayServiceId nvarchar(255)
+  MPayNumber nvarchar(255)
+  FodPickupLocationId nvarchar(255)
+  FodPickupLocationName nvarchar(255)
+  FodPickupLocationAdress nvarchar(500)
+  FodResponsibleDivision nvarchar(255)
+  RequestorIsAuthenticated bit
+  PictureId uniqueidentifier [ref: > FodPictures.Id]
+  RequestorBirthDate datetime2
+  RequestorResidence nvarchar(500)
+  RequestorStatuteId uniqueidentifier [ref: > FodRequestorStatute.Id]
+  ReasonCancel int
+  CreateDate datetime2
+  UpdateDate datetime2
+  CreateUserId nvarchar(255)
+  UpdateUserId nvarchar(255)
+  CreateUserName nvarchar(255)
+  UpdateUserName nvarchar(255)
+}
+
+// Catalog de servicii disponibile în sistem care pot fi solicitate de cetățeni
+Table FodService {
+  Id uniqueidentifier [pk]
+  Code nvarchar(50) [not null, unique]
+  Name nvarchar(255) [not null]
+  MPowerAuthorizationTypeCode nvarchar(50)
+  MPowerAuthorizationTypeCustomFieldCode nvarchar(50)
+  RsspaCode nvarchar(50) [not null]
+  Enabled bit
+  AllowMultipleSelection bit
+  RequiresResponseDataFile bit
+  RequiresResponseDataFileSignature bit
+  PersonType int
+  AuthentificationStatus int
+}
+
+// Cerere individuală de serviciu în cadrul unei cereri principale - reprezintă solicitarea unui serviciu specific
+Table FodServiceRequest {
+  Id uniqueidentifier [pk]
+  ServiceId uniqueidentifier [ref: > FodService.Id]
+  RequestId uniqueidentifier [ref: > FodRequest.Id]
+  Cost decimal(18,2)
+  StateTax decimal(18,2)
+  ServiceRequestResponseDataId uniqueidentifier [ref: > FodServiceRequestResponseData.Id]
+  ServiceName nvarchar(255)
+  RsspaExecutionTermsId uniqueidentifier [ref: > RSSPAExecutionTerm.Id]
+  FinalCost decimal(18,2)
+  InitialCost decimal(18,2)
+  JsonResponseId uniqueidentifier [ref: > FodResponseJson.Id]
+  Number nvarchar(50)
+  ExternalBackofficeServiceRequestNumber nvarchar(50)
+  Status int
+  ApostilationServiceRequestNumber nvarchar(50)
+  ApostilaStatus int
+  ServiceProviderNumber nvarchar(50)
+  SentToApostillation bit
+  SentToApostillationDate datetime2
+  FodExecutionTermId uniqueidentifier [ref: > FodExecutionTerm.Id]
+  HasDelayedPayment bit
+  HasDynamicFee bit
+}
+
+// Tipuri de cereri disponibile în sistem cu configurările și regulile lor specifice
+Table FodRequestType {
+  Id uniqueidentifier [pk]
+  Name nvarchar(255) [not null]
+  Code nvarchar(50) [not null, unique]
+  MPayCode nvarchar(50)
+  HideOnInitialPage bit
+  IsEnabled bit
+  AllowMultipleServices bit
+  PersonType int
+  AuthentificationStatus int
+  AvailableMPowerAuthorization bit
+  ServiceProviderId uniqueidentifier [ref: > FodServiceProvider.Id]
+  AllowsElectronicDocument bit
+  AllowsResponseOnPaper bit
+  AllowsDelivery bit
+  AllowsPickup bit
+  SaveBirthDate bit
+  SaveResidence bit
+  SaveLastPhoto bit
+  RequestTypePhone nvarchar(50)
+  RequestTypeEmail nvarchar(255)
+  RequestorPhoneRequired bit
+  RequestorEmailRequired bit
+  InformativeMessage nvarchar(max)
+  ReceptionModeType int
+  ReceptionModeStaticMessage nvarchar(max)
+  ShowRequestingAsType bit
+}
+
+// Furnizorii de servicii - instituțiile care procesează și oferă serviciile solicitate
+Table FodServiceProvider {
+  Id uniqueidentifier [pk]
+  Idno nvarchar(50)
+  Name nvarchar(255)
+  Enabled bit
+  BankAccount nvarchar(50)
+  BankCode nvarchar(20)
+  Phone nvarchar(50)
+  Email nvarchar(255)
+  CreateDate datetime2
+  UpdateDate datetime2
+  CreateUserId nvarchar(255)
+  UpdateUserId nvarchar(255)
+  CreateUserName nvarchar(255)
+  UpdateUserName nvarchar(255)
+}
+
+// Tabelă de legătură many-to-many între tipurile de cereri și serviciile disponibile
+Table FodRequestTypeService {
+  Id uniqueidentifier [pk]
+  RequestTypeId uniqueidentifier [ref: > FodRequestType.Id]
+  ServiceId uniqueidentifier [ref: > FodService.Id]
+}
+
+// Termenii de execuție pentru servicii - definește costurile și timpul necesar pentru fiecare serviciu
+Table FodExecutionTerm {
+  Id uniqueidentifier [pk]
+  Text nvarchar(max) [not null]
+  Cost decimal(18,2)
+  HoursValue int
+  PersonType int
+  StateTax decimal(18,2)
+  ServiceId uniqueidentifier [ref: > FodService.Id]
+}
+
+// Detalii despre livrarea documentelor rezultate din procesarea cererii
+Table ServiceRequestDelivery {
+  Id uniqueidentifier [pk]
+  Status int
+  NotifyStatusChange bit
+  Cost decimal(18,2)
+  TrackingId nvarchar(50)
+  CarrierEstimatedDeliveryStart datetime2
+  CarrierEstimatedDeliveryEnd datetime2
+  CarrierName nvarchar(255)
+}
+
+// Istoric al schimbărilor de status pentru livrarea documentelor
+Table ServiceRequestDeliveryStatusLog {
+  Id uniqueidentifier [pk]
+  DeliveryId uniqueidentifier [ref: > ServiceRequestDelivery.Id]
+  Status int
+  Message nvarchar(max)
+  LogDate datetime2
+}
+
+// Documente care pot fi semnate digital în cadrul procesării cererii
+Table SignableDocument {
+  Id uniqueidentifier [pk]
+  SignRequestId nvarchar(50) [not null]
+  Xml nvarchar(max)
+  Json nvarchar(max)
+  Hash varbinary(max)
+  Type int
+  Status int
+  Signature varbinary(max)
+  Message nvarchar(max)
+  ResponseDate datetime2
+}
+
+// Înregistrări ale plăților efectuate pentru cereri
+Table FodRequestPayment {
+  Id uniqueidentifier [pk]
+  RequestId uniqueidentifier [ref: > FodRequest.Id]
+  PaymentDate datetime2 [not null]
+  Amount decimal(18,2) [not null]
+}
+
+// Facturi adiționale asociate cu o cerere sau serviciu specific
+Table FodAdditionalInvoice {
+  Id uniqueidentifier [pk]
+  RequestId uniqueidentifier [ref: > FodRequest.Id]
+  ServiceRequestId uniqueidentifier [ref: > FodServiceRequest.Id]
+  Amount decimal(18,2)
+  Description nvarchar(500)
+  InvoiceDate datetime2
+}
+
+// Reduceri aplicate la costul serviciilor solicitate
+Table ServiceRequestDiscount {
+  Id uniqueidentifier [pk]
+  ServiceRequestId uniqueidentifier [ref: > FodServiceRequest.Id]
+  DiscountType int
+  Amount decimal(18,2)
+  Percentage decimal(5,2)
+  Reason nvarchar(500)
+}
+
+// Fișiere atașate la o cerere de serviciu specific
+Table FodServiceRequestFile {
+  Id uniqueidentifier [pk]
+  ServiceRequestId uniqueidentifier [ref: > FodServiceRequest.Id]
+  FileId uniqueidentifier [ref: > File.Id]
+  DocumentTypeId uniqueidentifier [ref: > FodDocumentType.Id]
+  IsMandatory bit
+}
+
+// Fișiere atașate la cererea principală
+Table FodRequestFile {
+  Id uniqueidentifier [pk]
+  RequestId uniqueidentifier [ref: > FodRequest.Id]
+  FileId uniqueidentifier [ref: > File.Id]
+  DocumentTypeId uniqueidentifier [ref: > FodDocumentType.Id]
+}
+
+// Metadate despre fișierele încărcate în sistem
+Table File {
+  Id uniqueidentifier [pk]
+  File_Name nvarchar(255) [not null]
+  File_Type nvarchar(50) [not null]
+  FileContentId uniqueidentifier [ref: > FileContent.Id]
+  RSSPS_Title nvarchar(255)
+  CreateDate datetime2
+  UpdateDate datetime2
+  CreateUserId nvarchar(255)
+  UpdateUserId nvarchar(255)
+  CreateUserName nvarchar(255)
+  UpdateUserName nvarchar(255)
+}
+
+// Conținutul efectiv al fișierelor stocate în baza de date
+Table FileContent {
+  Id uniqueidentifier [pk]
+  File_Content varbinary(max) [not null]
+  CreateDate datetime2
+  UpdateDate datetime2
+  CreateUserId nvarchar(255)
+  UpdateUserId nvarchar(255)
+  CreateUserName nvarchar(255)
+  UpdateUserName nvarchar(255)
+}
+
+// Tipuri de documente ce pot fi solicitate sau atașate în sistem
+Table FodDocumentType {
+  Id uniqueidentifier [pk]
+  Code nvarchar(50) [not null, unique]
+  Name nvarchar(255) [not null]
+  Description nvarchar(500)
+  IsSystem bit
+}
+
+// Configurarea tipurilor de documente necesare pentru fiecare serviciu
+Table FodServiceDocumentType {
+  Id uniqueidentifier [pk]
+  ServiceId uniqueidentifier [ref: > FodService.Id]
+  DocumentTypeId uniqueidentifier [ref: > FodDocumentType.Id]
+  IsMandatory bit
+  MaxFiles int
+}
+
+// Asocierea între utilizatori și rolurile lor în sistem
+Table FodUserProfileRole {
+  Id uniqueidentifier [pk]
+  UserProfileId uniqueidentifier [ref: > UserProfile.Id]
+  RoleId uniqueidentifier [ref: > FodRole.Id]
+  AssignedDate datetime2
+  ValidUntil datetime2
+}
+
+// Asocierea între utilizatori și organizațiile din care fac parte
+Table FodUserProfileOrganization {
+  Id uniqueidentifier [pk]
+  UserProfileId uniqueidentifier [ref: > UserProfile.Id]
+  OrganizationId uniqueidentifier [ref: > FodOrganization.Id]
+  IsActive bit
+}
+
+// Roluri disponibile în sistem pentru utilizatori (ex: operator, supervizor, admin)
+Table FodRole {
+  Id uniqueidentifier [pk]
+  Code nvarchar(50) [not null, unique]
+  Name nvarchar(255) [not null]
+  Description nvarchar(500)
+  IsActive bit
+}
+
+// Organizații/instituții care utilizează sistemul FOD
+Table FodOrganization {
+  Id uniqueidentifier [pk]
+  Code nvarchar(50) [not null, unique]
+  Name nvarchar(255) [not null]
+  Idno nvarchar(50)
+  Address nvarchar(500)
+  IsActive bit
+}
+
+// Definiții pentru date adiționale configurabile dinamic per serviciu
+Table FodAdditionalData {
+  Id uniqueidentifier [pk]
+  Code nvarchar(50) [not null]
+  Name nvarchar(255) [not null]
+  Type int
+  IsRequired bit
+  ValidationRegex nvarchar(500)
+  ErrorMessage nvarchar(500)
+}
+
+// Configurarea datelor adiționale necesare pentru fiecare serviciu
+Table FodServiceAdditionalData {
+  Id uniqueidentifier [pk]
+  ServiceId uniqueidentifier [ref: > FodService.Id]
+  AdditionalDataId uniqueidentifier [ref: > FodAdditionalData.Id]
+  OrderIndex int
+  IsRequired bit
+}
+
+// Valorile efective ale datelor adiționale completate pentru o cerere de serviciu
+Table FodServiceRequestAdditionalData {
+  Id uniqueidentifier [pk]
+  ServiceRequestId uniqueidentifier [ref: > FodServiceRequest.Id]
+  AdditionalDataId uniqueidentifier [ref: > FodAdditionalData.Id]
+  Value nvarchar(max)
+}
+
+// Valorile posibile pentru datele adiționale de tip listă/dropdown
+Table FodAdditionalDataTypeValue {
+  Id uniqueidentifier [pk]
+  AdditionalDataId uniqueidentifier [ref: > FodAdditionalData.Id]
+  Value nvarchar(255)
+  DisplayOrder int
+  IsActive bit
+}
+
+// Cereri adiționale asociate cu cererea principală (ex: apostilare, copii adiționale)
+Table FodAdditionalRequest {
+  Id uniqueidentifier [pk]
+  RequestId uniqueidentifier [ref: > FodRequest.Id]
+  Type int
+  Status int
+  Description nvarchar(500)
+  CreatedDate datetime2
+}
+
+// Legătură între cererile adiționale și cererile de serviciu
+Table FodAdditionalServiceRequest {
+  Id uniqueidentifier [pk]
+  AdditionalRequestId uniqueidentifier [ref: > FodAdditionalRequest.Id]
+  ServiceRequestId uniqueidentifier [ref: > FodServiceRequest.Id]
+}
+
+// Stocarea datelor cererii în format JSON pentru flexibilitate și versionare
+Table FodRequestJson {
+  Id uniqueidentifier [pk]
+  JsonData nvarchar(max) [not null]
+  Version nvarchar(10)
+  CreatedDate datetime2
+}
+
+// Semnături digitale aplicate pe datele JSON ale cererii
+Table FodRequestJsonSignature {
+  Id uniqueidentifier [pk]
+  RequestJsonId uniqueidentifier [ref: > FodRequestJson.Id]
+  SignatureData varbinary(max) [not null]
+  SignedBy nvarchar(255)
+  SignedDate datetime2
+}
+
+// Răspunsuri în format JSON de la serviciile procesate
+Table FodResponseJson {
+  Id uniqueidentifier [pk]
+  JsonData nvarchar(max) [not null]
+  ResponseType int
+  CreatedDate datetime2
+}
+
+// Semnături digitale pentru răspunsurile JSON
+Table FodResponseJsonSignature {
+  Id uniqueidentifier [pk]
+  ResponseJsonId uniqueidentifier [ref: > FodResponseJson.Id]
+  SignatureData varbinary(max) [not null]
+  SignedBy nvarchar(255)
+  SignedDate datetime2
+}
+
+// Date de răspuns pentru cererile de serviciu procesate
+Table FodServiceRequestResponseData {
+  Id uniqueidentifier [pk]
+  ServiceRequestId uniqueidentifier [ref: > FodServiceRequest.Id]
+  ResponseType int
+  ResponseData nvarchar(max)
+  ResponseDate datetime2
+  FileId uniqueidentifier [ref: > File.Id]
+}
+
+// Documente generate ca rezultat al procesării cererii de serviciu
+Table FodResponseDocument {
+  Id uniqueidentifier [pk]
+  ServiceRequestId uniqueidentifier [ref: > FodServiceRequest.Id]
+  DocumentNumber nvarchar(50)
+  DocumentDate datetime2
+  FileId uniqueidentifier [ref: > File.Id]
+  SignableDocumentId uniqueidentifier [ref: > SignableDocument.Id]
+}
+
+// Integrare cu sistemul MDocs pentru gestionarea documentelor electronice
+Table FodResponseDataMDocsDocument {
+  Id uniqueidentifier [pk]
+  ResponseDataId uniqueidentifier [ref: > FodServiceRequestResponseData.Id]
+  MDocsDocumentId nvarchar(50)
+  MDocsShareId nvarchar(50)
+  Status int
+}
+
+// Partajări de documente prin sistemul MDocs
+Table FodMDocsDocumentShare {
+  Id uniqueidentifier [pk]
+  DocumentId nvarchar(50) [not null]
+  ShareId nvarchar(50) [not null]
+  SharedDate datetime2
+  ExpiryDate datetime2
+  IsActive bit
+}
+
+// Detalii specifice pentru cererile care necesită apostilare
+Table FodApostilationDetails {
+  Id uniqueidentifier [pk]
+  Country nvarchar(100)
+  Purpose nvarchar(500)
+  AdditionalInfo nvarchar(max)
+}
+
+// Semnături digitale stocate în sistem
+Table FodSignature {
+  Id uniqueidentifier [pk]
+  SignatureType int
+  SignatureData varbinary(max) [not null]
+  Certificate varbinary(max)
+  SignedDate datetime2
+  IsValid bit
+}
+
+Table FodUserSignature {
+  Id uniqueidentifier [pk]
+  UserId uniqueidentifier [ref: > UserProfile.Id]
+  SignatureId uniqueidentifier [ref: > FodSignature.Id]
+  IsActive bit
+  ValidFrom datetime2
+  ValidTo datetime2
+}
+
+Table FodTermsAndCondition {
+  Id uniqueidentifier [pk]
+  RequestTypeId uniqueidentifier [ref: > FodRequestType.Id]
+  Version nvarchar(10) [not null]
+  Content nvarchar(max) [not null]
+  EffectiveDate datetime2
+  IsActive bit
+}
+
+Table FodNotificationType {
+  Id uniqueidentifier [pk]
+  RequestTypeId uniqueidentifier [ref: > FodRequestType.Id]
+  Type int
+  TemplateName nvarchar(255)
+  IsActive bit
+}
+
+Table FodPickupLocation {
+  Id uniqueidentifier [pk]
+  Code nvarchar(50) [not null, unique]
+  Name nvarchar(255) [not null]
+  Address nvarchar(500)
+  WorkingHours nvarchar(500)
+  Phone nvarchar(50)
+  IsActive bit
+}
+
+Table FodPictures {
+  Id uniqueidentifier [pk]
+  PictureData varbinary(max) [not null]
+  ContentType nvarchar(50)
+  UploadedDate datetime2
+}
+
+Table FodRequestorStatute {
+  Id uniqueidentifier [pk]
+  RequestTypeId uniqueidentifier [ref: > FodRequestType.Id]
+  Code nvarchar(50) [not null]
+  Name nvarchar(255) [not null]
+  Description nvarchar(500)
+  DocumentsRequired nvarchar(max)
+  IsActive bit
+}
+
+Table WorkingProgram {
+  Id uniqueidentifier [pk]
+  ServiceProviderId uniqueidentifier [ref: > FodServiceProvider.Id]
+  DayOfWeek int
+  StartTime time
+  EndTime time
+  IsWorkingDay bit
+}
+
+Table ExceptionWorkingProgram {
+  Id uniqueidentifier [pk]
+  ServiceProviderId uniqueidentifier [ref: > FodServiceProvider.Id]
+  ExceptionDate date
+  StartTime time
+  EndTime time
+  IsWorkingDay bit
+  Reason nvarchar(500)
+}
+
+Table RSSPAExecutionTerm {
+  Id uniqueidentifier [pk]
+  ServiceCode nvarchar(50) [not null]
+  ExecutionDays int
+  Description nvarchar(500)
+  IsActive bit
+}
+
+Table JsonSchema {
+  Id uniqueidentifier [pk]
+  SchemaName nvarchar(255) [not null, unique]
+  SchemaVersion nvarchar(10) [not null]
+  SchemaContent nvarchar(max) [not null]
+  IsActive bit
+  CreatedDate datetime2
+}
