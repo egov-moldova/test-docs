@@ -19,5 +19,4 @@ Gemfile.lock
 
 # Ignore the site directory if it exists
 /site 
-/.cache 
-/docs/fod
+/.cache
