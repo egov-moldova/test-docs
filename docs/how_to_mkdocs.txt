@@ -1,6 +1,9 @@
 Glossary:
 1. Declare a link (anchor)
 2. Build UML diagram
+3. Snippet usage
+4. Image usage ex. ![Detalii solicitant](detalii%20solicitant.png)
+
 
 
 How to declare a link (anchor)

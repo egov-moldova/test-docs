@@ -3,7 +3,7 @@
 ##**Autentificare**
 
 Interfața IServiceProvider trebuie să valideze semnătura mesajelor SOAP expediate de către MPay. Se recomandă ca dezvoltarea implementării interfeței să reutilizeze logica de validare existentă în framework-urile de web-servicii, cum ar fi .NET WCF sau J2EE JAX-WS, prin configurarea corectă a end-point-urilor.
-Pentru informații despre obținerea și înregistrare certificatului digital de sistem, vedeți [Obținerea credențialelor](../integration_process#obtinerea-credentialelor) și [Înregistrarea prestatorului de servicii](../integration_process#inregistrarea-prestatorului-de-servicii).
+Pentru informații despre obținerea și înregistrare certificatului digital de sistem, vedeți [Obținerea credențialelor](./../integration_process#obtinerea-credentialelor) și [Înregistrarea prestatorului de servicii](./../integration_process#inregistrarea-prestatorului-de-servicii).
 
 ##**Criptarea**
 
