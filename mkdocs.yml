@@ -306,6 +306,13 @@ nav:
       - SignableDocument: fod/database/entities/SignableDocument.md
       - UserProfile: fod/database/entities/UserProfile.md
       - WorkingProgram: fod/database/entities/WorkingProgram.md
+    - MPower:
+      - Introducere: mservices/mpower/index.md
+      - Jurnalul modificărilor: mservices/mpower/change_log.md
+      - Scenarii de interacțiune: mservices/mpower/interaction_scenarios.md
+      - Parcursul integrării: mservices/mpower/integration_development.md
+      - Măsuri de securitate: mservices/mpower/security.md
+      - Referințe API: mservices/mpower/api_references.md
 
 plugins:
   - search

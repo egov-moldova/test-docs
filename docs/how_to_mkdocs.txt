@@ -24,3 +24,31 @@ How to build UML diagrams
    <img src="./sample_darkmode.svg" alt="Sample" data-theme="dark">
    <img src="./sample_lightmode.svg" alt="Sample" data-theme="light">
    </picture>
+
+
+3. How to use Snippets
+   3.1 Single tab
+
+=== "appsettings.json"
+
+   ``` json 
+   {
+      "AllowSomethigs": true
+   }
+   ```
+
+   3.2 Multiple tabs
+
+=== "appsettings.json"
+
+   ``` json 
+   {
+      "AllowSomethigs": true
+   }
+   ```
+
+=== "appsettings.xml"
+
+   ``` xml 
+   <AllowSomethigs>true</AllowSomethigs>
+   ```
