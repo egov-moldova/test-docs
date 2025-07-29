@@ -313,6 +313,9 @@ nav:
       - Parcursul integrării: mservices/mpower/integration_development.md
       - Măsuri de securitate: mservices/mpower/security.md
       - Referințe API: mservices/mpower/api_references.md
+    - MNotify:
+      - Introducere: mservices/mnotify/index.md
+      - Jurnalul modificărilor: mservices/mnotify/change_log.md
 
 plugins:
   - search
