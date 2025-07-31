@@ -317,6 +317,7 @@ nav:
       - UserProfile: fod/database/entities/UserProfile.md
       - WorkingProgram: fod/database/entities/WorkingProgram.md
     
+    - Scenarii de interacțiune: mservices/mnotify/interaction_scenarios.md
 plugins:
   - search
   - i18n:
