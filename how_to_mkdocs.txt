@@ -1,0 +1,54 @@
+Glossary:
+1. Declare a link (anchor)
+2. Build UML diagram
+3. Snippet usage
+4. Image usage ex. ![Detalii solicitant](detalii%20solicitant.png)
+
+
+
+How to declare a link (anchor)
+   1. external inline: [Solicită certificat de sistem](https://semnatura.md/order/system-certificate)
+   2. external inside of HTML element <a href="https://semnatura.md/order/system-certificate">Solicită certificat de sistem</a>
+
+
+How to build UML diagrams
+   1. build diagram with plantuml https://plantuml.com/
+   2. access https://plantuml-editor.kkeisuke.dev/ page and generate .svg (press CTRL + Enter)
+      file for both dark mode and light mode.
+   3. inspect svg element in browser and copy svg tag
+   4. create a folder in a directory you work and name it as .md file you build a page
+   5. create a file with .svg extension and paste the copied svg tag. Save it!
+   6. For each image with destination of dark or lightmode use HTML code below
+      ! do not use multiple img with same data-theme in one <picture> tag
+   <picture class="theme-picture">
+   <img src="./sample_darkmode.svg" alt="Sample" data-theme="dark">
+   <img src="./sample_lightmode.svg" alt="Sample" data-theme="light">
+   </picture>
+
+
+3. How to use Snippets
+   3.1 Single tab
+
+=== "appsettings.json"
+
+   ``` json 
+   {
+      "AllowSomethigs": true
+   }
+   ```
+
+   3.2 Multiple tabs
+
+=== "appsettings.json"
+
+   ``` json 
+   {
+      "AllowSomethigs": true
+   }
+   ```
+
+=== "appsettings.xml"
+
+   ``` xml 
+   <AllowSomethigs>true</AllowSomethigs>
+   ```
