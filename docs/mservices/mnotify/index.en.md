@@ -60,6 +60,10 @@ This document contains several notation styles; the following details the styles
 
 MNotify is a governmental electronic notification service designed to send messages to recipients, through different communication channels, in order to inform about events related to public services, or other relevant notices.
 
+##**Delivery channels**
+
+Currently MNotify supports e-mail, web push notifications and MCabinet as a delivery channel.  IDNP property is required when specifying a notification identity.
+
 ##**Service dependencies**
 
 <span class="highlight-text-yellow">[service dependencies that might influence on service contract, availability, performance, security, etc. ]<span>

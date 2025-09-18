@@ -44,16 +44,17 @@ nav:
       - Parcursul integrării: mservices/msign/integration_development.md
       - Măsuri de securitate: mservices/msign/security.md
       - Referințe API: mservices/msign/api_references.md
-  - MPower:
-      - Introducere: mservices/mpower/index.md
-      - Jurnalul modificărilor: mservices/mpower/change_log.md
-      - Scenarii de interacțiune: mservices/mpower/interaction_scenarios.md
-      - Parcursul integrării: mservices/mpower/integration_development.md
-      - Măsuri de securitate: mservices/mpower/security.md
-      - Referințe API: mservices/mpower/api_references.md
-  - MNotify:
-    - Introducere: mservices/mnotify/index.md
-    - Jurnalul modificărilor: mservices/mnotify/change_log.md
+    - MPower:
+        - Introducere: mservices/mpower/index.md
+        - Jurnalul modificărilor: mservices/mpower/change_log.md
+        - Scenarii de interacțiune: mservices/mpower/interaction_scenarios.md
+        - Parcursul integrării: mservices/mpower/integration_development.md
+        - Măsuri de securitate: mservices/mpower/security.md
+        - Referințe API: mservices/mpower/api_references.md
+    - MNotify:
+      - Introducere: mservices/mnotify/index.md
+      - Jurnalul modificărilor: mservices/mnotify/change_log.md
+      - Parcursul integrării: mservices/mnotify/integration_development.md
   - FOD:
     - Introducere: fod/index.md
     - Aplicația Fod:
